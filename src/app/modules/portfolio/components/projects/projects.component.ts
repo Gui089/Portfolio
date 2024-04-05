@@ -1,14 +1,23 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
+
+//material
+import {MatDialogModule, MatDialog} from '@angular/material/dialog';
+
+import { EDialogPanelClass } from '../../enum/EDialogPanelClass';
+import { DialogProjectsComponent } from '../dialog/dialog-projects/dialog-projects.component';
+import { IProjects } from '../../interface/IProjectsinterface';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [],
+  imports: [MatDialogModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  public arrayProjectsComponent = signal([
+  #dialog = inject(MatDialog);
+
+  public arrayProjectsComponent = signal<IProjects[]>([
     {
       src:"assets/projects/viajouAnotou.png",
       alt:"projeto",
@@ -66,4 +75,11 @@ export class ProjectsComponent {
       ]
     },
   ])
+
+  public openDialog(data: IProjects) {
+    this.#dialog.open(DialogProjectsComponent, {
+      data,
+      panelClass: EDialogPanelClass.PROJECTS,
+    })
+  }
 }
