@@ -13,8 +13,8 @@ export class ProjectsComponent {
       src:"assets/projects/viajouAnotou.png",
       alt:"projeto",
       title:"Viajou-Anotou",
-      width:'100px',
-      height:'51px',
+      width:'120px',
+      height:'78px',
       description:'Projeto feito em React, este projeto se trata de uma SPA, com conceitos de React-Router-Dom e as boas práticas do React.',
       links: [
         {
@@ -27,8 +27,8 @@ export class ProjectsComponent {
       src:"assets/projects/meAvalia.png",
       alt:"projeto",
       title:"Me Avalia",
-      width:'100px',
-      height:'51px',
+      width:'120px',
+      height:'78px',
       description:'Projeto básico feito em React, nele utilizo boas práticas para tratar requests em Apis.',
       links: [
         {
@@ -41,8 +41,8 @@ export class ProjectsComponent {
       src:"assets/projects/nlwNotes.png",
       alt:"projeto",
       title:"nlw Notes",
-      width:'100px',
-      height:'51px',
+      width:'120px',
+      height:'78px',
       description:'Projeto feito em React, nele aplico conceitos de manipulação da API do browser para gravar audios para serem convertidos em notas.',
       links: [
         {
@@ -55,8 +55,8 @@ export class ProjectsComponent {
       src:"assets/projects/quizGames.png",
       alt:"projeto",
       title:"Quiz dos videos-games",
-      width:'100px',
-      height:'51px',
+      width:'120px',
+      height:'78px',
       description:'Projeto feito em React, um quiz básico, porém nele aplico conceitos de tratamentos de erros e delays na aplicação.',
       links: [
         {
